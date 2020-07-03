@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  height: 100vh;
+  background-color: #fddeed;
+  background-image: url(./img/Pink_Panther.png);
+  background-repeat: no-repeat;
+  background-position-x: 5%;
+  background-position-y: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  justify-content: space-between;
+}
+
+.tasks_wrapper {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 1px solid white;
+}
+
+.tasks_to-do,
+.tasks_done {
+  width: 20vw;
+  min-height: 5vh;
+  padding: 10px;
+  background-color: #f49abe;
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
+.tasks_to-do::before {
+  content: "To Do:";
+  font-size: 20px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  height: 40px;
+}
+
+.tasks_done {
+  background-color: #62b29f;
+}
+
+.tasks_done::before {
+  content: "Done:";
+  font-size: 20px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  height: 40px;
+}
+
+.form_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  border-radius: 10px;
+  border: none;
+  text-indent: 10px;
+  margin-right: 20px;
+  background-color: #fbee0d;
+  color: gray;
+  font-size: 15px;
+  border: 1px solid white;
+}
+
+button {
+  border-radius: 10px;
+  width: 50px;
+  height: 5vh;
+  background-color: #4d73ff;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  border: 1px solid white;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.done span {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.delete_btn {
+  padding: 0px 10px;
+  border-radius: 5px;
+  background-color: rgb(248, 64, 64);
+  text-decoration: none;
+  color: white;
+}
